@@ -548,17 +548,17 @@
         }
 
         .comments-list {
-            max-height: 300px; /* Increased height */
+            max-height: 450px; /* Increased height for more comments */
             overflow-y: auto;
             border: 1px solid #ddd; /* Lighter border */
             border-radius: var(--border-radius);
-            padding: 0.8rem; /* More padding */
+            padding: 1rem; /* Increased padding */
             background-color: #fcfcfc;
             box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Inner shadow */
         }
 
         .comment-item {
-            padding: 1rem 0.8rem; /* More padding */
+            padding: 1.2rem 1rem; /* Increased padding */
             border-bottom: 1px solid #eee;
             font-size: 0.95rem;
         }
@@ -1937,7 +1937,7 @@
                 copyBtn: "Nakili",
                 recipientNameLabel: "Jina la Mpokeaji:",
                 instantAccessText: "**Ufikiaji wa Papo Hapo!** Malipo yako **yatatambuliwa kiotomatiki** ndani ya muda mfupi.",
-                paymentNotDetectedBtn: "Malipo hayajatambuliwa? Bofya hapa kuthibitisha mwenyewe.",
+                paymentNotDetectedBtn: "Malipa hayajatambuliwa? Bofya hapa kuthibitisha mwenyewe.",
                 step2Confirmation: "Hatua ya 2: Uthibitisho wa Malipo ya Mwongozo",
                 transactionIdLabel: "Kitambulisho cha Muamala wa M-Pesa:",
                 yourWhatsappLabel: "Nambari Yako ya WhatsApp:",
@@ -1983,7 +1983,6 @@
                 proceedToPaymentBtn: "Endelea na Malipo",
                 okBtn: "Sawa",
                 reportVideoTitle: "Ripoti Video",
-                reportVideoIntro: "Video hii haijawahi kupokea maoni hasi au maoni.",
                 reportVideoConfirm: "Do you still want to report it?",
                 reportReasonPlaceholder: "Hiari, weka sababu yako ya kuripoti...",
                 yesReportBtn: "Ndio, Ripoti",
@@ -3023,7 +3022,7 @@
                 (faq.question.en.toLowerCase().includes(searchTerm) || faq.question.sw.toLowerCase().includes(searchTerm)) ||
                 (faq.answer.en.toLowerCase().includes(searchTerm) || faq.answer.sw.toLowerCase().includes(searchTerm))
             );
-            renderFAQs(filteredFqs);
+            renderFAQs(filteredFaqs);
         });
 
         // --- Scroll to Top Button Logic ---
