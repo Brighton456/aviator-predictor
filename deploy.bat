@@ -35,15 +35,6 @@ if errorlevel 1 (
     echo WARNING: git pull failed or nothing to pull.
 )
 
-:: Install + build
-echo Installing dependencies...
-call npm install
-if errorlevel 1 (
-    echo ERROR: npm install failed.
-    pause
-    exit /b 1
-)
-
 echo Building project...
 call npm run build
 if errorlevel 1 (
