@@ -7,7 +7,6 @@
   NPM_FLAGS = "--legacy-peer-deps"
   CI = "false"
 
-[# Functions directory]
 [functions]
   directory = "functions"
 
