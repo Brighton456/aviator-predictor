@@ -12,7 +12,6 @@
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["axios", "cors", "express", "dotenv"]
-  included_files = ["node_modules/axios/**"]
 
 [[redirects]]
   from = "/*"
