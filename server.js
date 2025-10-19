@@ -11,9 +11,9 @@ app.use(express.json());
 // PayHero Configuration
 const PAYHERO_CONFIG = {
   BASE_URL: 'https://backend.payhero.co.ke/api/v2',
-  CHANNEL_ID: '3843',
-  ACCOUNT_ID: '3100',
-  AUTH: 'Basic ' + Buffer.from('2Eox3iyT1zYN13pskjzz:CSH1AKK0OJdUjazApAQllfShdZOTvFrrVNeIzsJf').toString('base64')
+  CHANNEL_ID: process.env.PAYHERO_CHANNEL_ID || '3100',
+  ACCOUNT_ID: process.env.PAYHERO_CHANNEL_ID || '3100',
+  AUTH: 'Basic ' + Buffer.from(`${process.env.PAYHERO_USERNAME}:${process.env.PAYHERO_API_PASSWORD}`).toString('base64')
 };
 
 // In-memory store for transaction statuses
